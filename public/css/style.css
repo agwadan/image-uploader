@@ -1,0 +1,8 @@
+.font-size-09{
+  font-size: 0.9em;
+}
+
+input:focus{
+  box-shadow: none !important;
+  outline: none !important;
+}
