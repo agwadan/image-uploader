@@ -25,28 +25,29 @@
 
     {{!-- display Images --}}
     <section class="mt-5">
-      <div class="row"></div>
-      {{#each images}}
-      {{#each this}}
-      {{#if imageBase64}}
+      <div class="row">
 
-      <div class="col-3">
-        <div class="card shadow" style="width: 18rem;">
-          <img src='data:{{contentType}};base64,{{imageBase64}}' class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title fot-poppins">UI/UX Design</h5>
+        {{#each images}}
+        {{#each this}}
+        {{#if imageBase64}}
+        <div class="col-3">
+          <div class="card shadow" style="width: 18rem;">
+            <img src='data:{{contentType}};base64,{{imageBase64}}' class=" img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title fot-poppins">UI/UX Design</h5>
 
-            <p class="text-secondary font-size-09">Some quick example text to build on the card title and make up the
-              bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-info font-size-09 text-light">Go somewhere</a>
+              <p class="text-secondary font-size-09">Some quick example text to build on the card title and make up the
+                bulk of the card's
+                content.</p>
+              <a href="#" class="btn btn-info font-size-09 text-light">Go somewhere</a>
+            </div>
           </div>
         </div>
         {{/if}}
         {{/each }}
         {{/each}}
+
       </div>
     </section>
-
   </div>
 </section>
