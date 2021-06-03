@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* Connecting to db */
-require('./database/database')();
+require('./server/database/database')();
 
 /* setup view engine */
 app.set('view engine', 'hbs');
