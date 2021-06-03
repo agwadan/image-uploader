@@ -8,6 +8,9 @@ app.use(express.json());
 /* Serving static files */
 app.use(express.static(path.join(__dirname, 'public')));
 
+/* Connecting to db */
+require('./database/database')();
+
 /* setup view engine */
 app.set('view engine', 'hbs');
 app.engine('hbs', hbs({
