@@ -7,7 +7,7 @@ var storageVar = multer.diskStorage({
   },
   filename: function (req, file, cb) {
     var ext = file.originalname.substr(file.originalname.lastIndexOf('.'))// Grabbing the extension of the uploaded file
-    cb(null, file.filename + '-' + Date.now() + ext)
+    cb(null, file.fieldname + '-' + Date.now() + ext)
   }
 })
 
