@@ -8,6 +8,7 @@ exports.home = async (req, res) => {
 
 exports.upload = (req, res, next) => {
   const files = req.files;
+  console.log(files);
 
   if (!files) {
     const error = new Error('Please choose a file');

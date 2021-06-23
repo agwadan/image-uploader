@@ -10,3 +10,8 @@ input:focus{
 .card{
   margin: 30px !important;
 }
+
+body{
+  background-color: rgb(102, 102, 102);
+  color: #fff;
+}

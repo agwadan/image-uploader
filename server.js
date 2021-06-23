@@ -23,4 +23,4 @@ app.engine('hbs', hbs({
 /* Calling routes */
 app.use('/', require('./server/router/router'))
 
-app.listen(3000, () => console.log('server running on port 3000'));
+app.listen(3001, () => console.log('server running on port 3001'));
